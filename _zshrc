@@ -1,8 +1,18 @@
 ## 参考:https://gist.github.com/mollifier/4979906
 
-if [ "$(uname)" '==' 'Darwin' ]; then
-  export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-fi
+case ${OSTYPE} in
+    darwin*)
+        # Mac用の設定
+        export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+        export CLICOLOR=1
+        # lsの色設定
+        #export LSCOLORS=gxfxcxdxbxegedabagacadd
+        export LSCOLORS=gxhxcxdxcxegedabagacadd
+        ;;
+    linux*)
+        #Linux用の設定
+        ;;
+esac
 
 #### zsh settings ####
 autoload -Uz colors
@@ -64,8 +74,12 @@ setopt hist_ignore_space
 # ヒストリに保存するときに余分なスペースを削除する
 setopt hist_reduce_blanks
 
+
+#### 外部設定ファイル読み込み ####
 zsh_conf=~/.zsh.d/conf
 
 # エイリアス
 . $zsh_conf/alias
+
+##################################
 

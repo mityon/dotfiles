@@ -1,3 +1,7 @@
+" 下記2行はおそらく不要
+":set term=xterm-256color
+":syntax on
+
 " setting
 "文字コードをUFT-8に設定
 set fenc=utf-8
@@ -25,7 +29,7 @@ set virtualedit=onemore
 " インデントはスマートインデント
 set smartindent
 " ビープ音を可視化
-set visualbell
+"set visualbell
 " 括弧入力時の対応する括弧を表示
 set showmatch
 " ステータスラインを常に表示
@@ -60,4 +64,5 @@ set incsearch
 set wrapscan
 " 検索語をハイライト表示
 set hlsearch
-
+" ESC連打でハイライト解除
+nmap <Esc><Esc> :nohlsearch<CR><Esc>

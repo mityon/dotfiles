@@ -4,15 +4,16 @@ alias grep='grep --color=always'
 alias mkdir='mkdir -p'
 alias gs='git status'
 alias gb='git branch'
+alias gco='git checkout'
+alias gcl='git clone'
 alias gr='git remote -v'
+alias gl='git log --pretty=format:"%C(yellow)%h%Creset %C(magenta)%ci%Creset%n%C(cyan)%an <%ae>%Creset%n%B"'
+alias glp='git log -p'
+alias glg='git log --graph --pretty=format:"%C(yellow)%h%Creset %C(magenta)%ci%Creset%n%C(cyan)%an <%ae>%Creset%n%B"'
 
 case ${OSTYPE} in
     darwin*)
         # Mac用の設定
-        export CLICOLOR=1
-        # lsの色設定
-        #export LSCOLORS=gxfxcxdxbxegedabagacadd
-        export LSCOLORS=gxfxcxdxcxegedabagacadd
         alias ls='ls -G -F'
         alias la='ls -alG'
         alias ll='ls -lG'
