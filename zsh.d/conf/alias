@@ -1,0 +1,25 @@
+alias rm='rm -i'
+alias cp='cp -i'
+alias grep='grep --color=always'
+alias mkdir='mkdir -p'
+alias gs='git status'
+alias gb='git branch'
+alias gr='git remote -v'
+
+case ${OSTYPE} in
+    darwin*)
+        # Mac用の設定
+        export CLICOLOR=1
+        # lsの色設定
+        #export LSCOLORS=gxfxcxdxbxegedabagacadd
+        export LSCOLORS=gxfxcxdxcxegedabagacadd
+        alias ls='ls -G -F'
+        alias la='ls -alG'
+        alias ll='ls -lG'
+        alias ls='ls -G'
+        ;;
+    linux*)
+        #Linux用の設定
+        alias ls='ls -F --color=auto'
+        ;;
+esac
