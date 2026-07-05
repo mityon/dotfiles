@@ -5,25 +5,46 @@ command_timeout = 1000
 scan_timeout = 30
 
 format = """
+[  ](bg:#9ec7be fg:#111d1a)\
+[](bg:#43766a fg:#9ec7be)\
 $directory\
+[](fg:#43766a bg:#2b4841)\
 $git_branch\
-$line_break\
-$character"""
+[](fg:#2b4841 bg:#1d302c)\
+$nodejs\
+$bun\
+$rust\
+$golang\
+$php\
+[](fg:#1d302c bg:#152421)\
+$time\
+[ ](fg:#152421)\
+\n$character"""
 
 [directory]
+style = "fg:#ffffff bg:#43766a"
+format = "[ $path ]($style)"
 truncation_length = 3
-truncate_to_repo = true
-style = "bold cyan"
+truncation_symbol = "…/"
 
 [git_branch]
-format = " [$symbol$branch]($style)"
-symbol = "git:"
-style = "bold purple"
+symbol = ""
+style = "bg:#2b4841"
+format = '[[ $symbol $branch ](fg:#8ac6b8 bg:#2b4841)]($style)'
 
 [git_status]
-disabled = true
-format = " [$all_status$ahead_behind]($style)"
-style = "bold yellow"
+style = "bg:#2b4841"
+format = '[[($all_status$ahead_behind )](fg:#8ac6b8 bg:#2b4841)]($style)'
+
+# [git_branch]
+# format = " [$symbol$branch]($style)"
+# symbol = "git:"
+# style = "bold purple"
+
+# [git_status]
+# disabled = true
+# format = " [$all_status$ahead_behind]($style)"
+# style = "bold yellow"
 
 [cmd_duration]
 disabled = true
