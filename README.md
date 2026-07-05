@@ -34,6 +34,8 @@ config/
     config
   sheldon/
     plugins.toml
+  starship/
+    starship.toml
   nvim/
   ripgrep/
     ripgreprc

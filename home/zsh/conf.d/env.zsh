@@ -12,3 +12,6 @@ export RIPGREP_CONFIG_PATH="${HOME}/.config/ripgrep/ripgreprc"
 
 ## bat uses this XDG config location by default, but keeping it explicit helps symlinked setups.
 export BAT_CONFIG_PATH="${HOME}/.config/bat/config"
+
+## Keep Starship config under the same tool-directory layout as other XDG configs.
+export STARSHIP_CONFIG="${HOME}/.config/starship/starship.toml"
