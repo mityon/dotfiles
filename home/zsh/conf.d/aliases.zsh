@@ -13,9 +13,12 @@ alias gr='git remote -v'
 alias gl='git log --pretty=format:"%C(yellow)%h%Creset %C(magenta)%ci%Creset%n%C(cyan)%an <%ae>%Creset%n%B"'
 alias glp='git log -p'
 alias glg='git log --graph --pretty=format:"%C(yellow)%h%Creset %C(magenta)%ci%Creset%n%C(cyan)%an <%ae>%Creset%n%B"'
+alias gsw='git switch'
+
+alias vi='nvim'
+alias cdd='cd $(ls | fzf)'
 
 ## macOS BSD ls color aliases.
 alias ls='ls -G'
 alias la='ls -alG'
 alias ll='ls -lG'
-

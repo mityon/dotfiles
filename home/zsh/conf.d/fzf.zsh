@@ -20,11 +20,11 @@ if command -v fzf >/dev/null 2>&1; then
         --preview-window='right:60%:wrap'
     )" || return
 
-    "${EDITOR:-vim}" "$file"
+    "${EDITOR:-nvim}" "$file"
   }
 
   ## Search text with ripgrep, preview the match, and open it at the selected line.
-  rgf() {
+  frg() {
     local selected file line
     selected="$(
       fzf --ansi --disabled \
@@ -38,6 +38,6 @@ if command -v fzf >/dev/null 2>&1; then
     file="${selected%%:*}"
     line="${selected#*:}"
     line="${line%%:*}"
-    "${EDITOR:-vim}" "$file" "+${line}"
+    "${EDITOR:-nvim}" "$file" "+${line}"
   }
 fi

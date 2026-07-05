@@ -8,5 +8,4 @@
 --paging="auto"
 
 # A readable dark theme available in bat's bundled themes.
---theme="TwoDark"
-
+--theme="Dracula"
