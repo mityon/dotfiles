@@ -1,0 +1,5 @@
+## Copy this file to local.zsh for machine-specific settings.
+## local.zsh is loaded last and should not be committed.
+
+# export PATH="${HOME}/bin:${PATH}"
+

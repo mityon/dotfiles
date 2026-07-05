@@ -1,7 +1,10 @@
+## Common aliases for safer commands and shorter Git operations.
+
 alias rm='rm -i'
 alias cp='cp -i'
 alias grep='grep --color=always'
 alias mkdir='mkdir -p'
+
 alias gs='git status'
 alias gb='git branch'
 alias gco='git checkout'
@@ -11,16 +14,8 @@ alias gl='git log --pretty=format:"%C(yellow)%h%Creset %C(magenta)%ci%Creset%n%C
 alias glp='git log -p'
 alias glg='git log --graph --pretty=format:"%C(yellow)%h%Creset %C(magenta)%ci%Creset%n%C(cyan)%an <%ae>%Creset%n%B"'
 
-case ${OSTYPE} in
-    darwin*)
-        # Mac用の設定
-        alias ls='ls -G -F'
-        alias la='ls -alG'
-        alias ll='ls -lG'
-        alias ls='ls -G'
-        ;;
-    linux*)
-        #Linux用の設定
-        alias ls='ls -F --color=auto'
-        ;;
-esac
+## macOS BSD ls color aliases.
+alias ls='ls -G'
+alias la='ls -alG'
+alias ll='ls -lG'
+

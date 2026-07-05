@@ -1,9 +1,11 @@
+" Legacy Vim settings. Neovim settings live under config/nvim.
+
 " 下記2行はおそらく不要
 ":set term=xterm-256color
 ":syntax on
 
 " setting
-"文字コードをUFT-8に設定
+"文字コードをUTF-8に設定
 set fenc=utf-8
 " バックアップファイルを作らない
 set nobackup
