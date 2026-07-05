@@ -30,7 +30,11 @@ home/
     .vimrc
 
 config/
+  bat/
+    config
   nvim/
+  ripgrep/
+    ripgreprc
 ```
 
 ホーム直下に置く設定は `home/<tool>/`、XDG 配下に置く設定は `config/<tool>/` で管理します。

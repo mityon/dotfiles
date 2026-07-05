@@ -1,0 +1,18 @@
+# Search dotfiles by default, which is useful inside dotfiles repositories.
+--hidden
+
+# Do not search Git internals.
+--glob=!.git/*
+
+# Avoid noisy dependency and build directories.
+--glob=!node_modules/*
+--glob=!target/*
+--glob=!.DS_Store
+
+# Ignore case unless the query contains uppercase letters.
+--smart-case
+
+# Keep long generated lines readable in terminal output.
+--max-columns=200
+--max-columns-preview
+

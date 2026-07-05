@@ -1,0 +1,12 @@
+# Show line numbers, Git changes, and filenames without the full grid.
+--style="numbers,changes,header"
+
+# Use colors when writing to a terminal.
+--color="auto"
+
+# Page only when output is longer than the screen.
+--paging="auto"
+
+# A readable dark theme available in bat's bundled themes.
+--theme="TwoDark"
+
