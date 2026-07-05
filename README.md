@@ -32,6 +32,8 @@ home/
 config/
   bat/
     config
+  sheldon/
+    plugins.toml
   nvim/
   ripgrep/
     ripgreprc
