@@ -32,6 +32,8 @@ home/
 config/
   bat/
     config
+  ghostty/
+    config
   sheldon/
     plugins.toml
   starship/

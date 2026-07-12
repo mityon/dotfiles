@@ -1,0 +1,12 @@
+macos-option-as-alt = left
+
+theme = Dracula+
+
+window-padding-x = 10
+background-opacity = 0.80
+background-blur-radius = 10
+font-size = 14
+shell-integration-features = no-cursor
+cursor-color = #FFFFFF
+cursor-style = block
+cursor-style-blink = false
