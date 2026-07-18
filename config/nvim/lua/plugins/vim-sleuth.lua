@@ -1,3 +1,5 @@
 return {
-    'tpope/vim-sleuth'
+  -- 開いたファイルの内容から tab / space やインデント幅を推測して、自動で合わせる。
+  -- プロジェクトごとの既存スタイルに寄せたいので追加する。
+  "tpope/vim-sleuth",
 }

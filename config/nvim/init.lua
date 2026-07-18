@@ -1,14 +1,2 @@
-require('core/base')
-
-local has = vim.fn.has
-local is_mac = has "macunix"
--- local is_linux = has "unix"
--- local is_win = has "win32"
--- local is_wsl = has "wsl"
-
-if is_mac == 1 then
-  require('core/mac')
-end
-
-require('core/keymaps')
-require('core/lazy')
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
